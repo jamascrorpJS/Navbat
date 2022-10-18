@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Navbat</string>
+    <string name="enter">Войти</string>
+    <string name="hint_number">Номер телефона</string>
+    <string name="question_authoriz">У вас нет аккаунта?</string>
+    <string name="registr">Регистрация</string>
+    <string name="next">Далее</string>
+    <string name="check">Код подтверждения</string>
+    <string name="question_sms">Не пришло уведомление?</string>
+    <string name="send_again">Отправить повторно</string>
+    <string name="name">Имя *</string>
+    <string name="surname">Фамилия</string>
+    <string name="tel">Номер телефона *</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="account">Уже есть аккаунт?</string>
+</resources>
