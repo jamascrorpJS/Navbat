@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.jamascrorp.navbat.databinding.AuthorizationBinding
 import com.jamascrorp.navbat.databinding.CheckBinding
 
@@ -17,14 +18,24 @@ class CheckFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View {
+        hideAction()
+        hideBottom(this)
         viewBinding = CheckBinding.inflate(layoutInflater)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.buttonAuthoriz.setOnClickListener {
+            findNavController().navigate(R.id.action_checkFragment_to_servicesFragment)
+        }
         binding.radio.isChecked = true
         binding.radio1.isChecked = true
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        showBottom(this)
     }
 
     companion object {

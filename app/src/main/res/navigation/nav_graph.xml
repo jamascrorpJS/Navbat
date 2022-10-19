@@ -18,7 +18,11 @@
     <fragment
         android:id="@+id/checkFragment"
         android:name="com.jamascrorp.navbat.CheckFragment"
-        android:label="CheckFragment" />
+        android:label="CheckFragment" >
+        <action
+            android:id="@+id/action_checkFragment_to_servicesFragment"
+            app:destination="@id/servicesFragment" />
+    </fragment>
     <fragment
         android:id="@+id/registrationFragment"
         android:name="com.jamascrorp.navbat.RegistrationFragment"
@@ -30,4 +34,12 @@
             android:id="@+id/action_registrationFragment_to_authorizationFragment"
             app:destination="@id/authorizationFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/servicesFragment"
+        android:name="com.jamascrorp.navbat.ServicesFragment"
+        android:label="Navbat" />
+    <fragment
+        android:id="@+id/writesFragment"
+        android:name="com.jamascrorp.navbat.WritesFragment"
+        android:label="WritesFragment" />
 </navigation>

@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.RadioButton
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.findNavController
 
 import com.jamascrorp.navbat.databinding.AuthorizationBinding
@@ -15,14 +16,12 @@ class AuthorizationFragment : Fragment() {
     private var viewBinding: AuthorizationBinding? = null
     private val binding get() = viewBinding!!
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View {
+        hideAction()
+        hideBottom(this)
         viewBinding = AuthorizationBinding.inflate(layoutInflater)
         return binding.root
     }

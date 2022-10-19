@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="navbat">#EE6F42</color>
     <color name="dot">#EDEDED</color>
+    <color name="barColor">#1E3148</color>
 </resources>
